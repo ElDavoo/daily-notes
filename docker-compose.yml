@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  daily-notes:
+    build: .
+    restart: always
+    environment:
+        - TZ=Europe/Rome
+        - QUOTES_API_KEY=
