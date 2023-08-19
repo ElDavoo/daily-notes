@@ -54,6 +54,7 @@ while True:
         except Exception as e:
 
             print("Couldn't create note: %s" % e)
+            random_delay([3600*6, 3600*12])
             pass
 
     except Exception as e:
