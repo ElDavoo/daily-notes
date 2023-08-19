@@ -6,3 +6,5 @@ services:
     environment:
         - TZ=Europe/Rome
         - QUOTES_API_KEY=
+    volumes:
+      - ./session.json:/app/session.json

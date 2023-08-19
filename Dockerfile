@@ -9,6 +9,5 @@ RUN pip install --no-cache-dir -r /requirements.txt
 RUN mkdir /app
 WORKDIR /app
 COPY ./app.py app.py
-COPY session.json session.json
 
 CMD ["python", "/app/app.py"]
