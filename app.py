@@ -13,7 +13,7 @@ logger = logging.getLogger()
 logger.addHandler(logging.StreamHandler())
 logger.setLevel(logging.INFO)
 
-cl = Client()
+cl = Client(delay_range=[1,3])
 
 QUOTES_API_KEY = os.environ.get('QUOTES_API_KEY')
 if not QUOTES_API_KEY:
